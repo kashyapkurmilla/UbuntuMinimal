@@ -15,3 +15,16 @@ This Docker image provides a minimal Ubuntu 22.04 environment with essential ter
 
 ```bash
 docker build -t mini-ubuntu-os .
+````
+
+### Run the Container
+
+```bash
+docker run -it --name my-terminal mini-ubuntu-os
+```
+
+### Mount Local Directory (Optional)
+
+```bash
+docker run -it -v $PWD:/data mini-ubuntu-os
+```
